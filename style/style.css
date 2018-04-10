@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%
+}
+        
+body {
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.background {
+    width: 100%;
+}
+
+#container {
+    position: relative;
+}
+
+#div-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    padding: 16px;
+    font-size: 15px;
+    align-items:center;
+    background-color: rgba(233, 230, 230, 0.897);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    flex: 1;
+}
+
+.menu a {
+    color: Black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+}
+
+.menu li {
+    display: inline;
+    padding: 2px;    
+}
+
+.menu_bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#intro {
+    display:flex;
+    flex-grow: 1;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+}
+
+#intro h4 {
+    text-align: left;
+    font-family: 'Do Hyeon', sans-serif;
+    color: Black;
+    letter-spacing: 1px;
+    top: 50%;
+    position: absolute;
+    font-size: 3vw;
+
+}
+#intro p {
+    text-align: left;
+    font-family: 'Do Hyeon';
+    color: Black;
+    letter-spacing: 1px;
+    top: 58%;
+    position: absolute;
+    font-size: 2.5vw;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 70px 0;
+}
+
+#about img {
+    height: 160px;
+    width: 160px;
+    margin: 0 auto;
+
+}
+
+#about p {
+    font-family: 'Do Hyeon';
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 50px 145px 0 145px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+#projects-container h4 {
+    font-family: 'Do Hyeon';
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 0 0 50px 0;
+}
+
+.project {
+    margin: 20px;
+}
+
+.project p {
+    color: black;
+}
+
+.project img {
+    border: solid;
+    border-color: rgb(230, 227, 227);
+    border-width: 2px;
+    width: 500px;
+    height: 350px;
+}
+
+.project .button {
+    height: 50px;
+    padding: 30px;
+}
+
+/* @media all and (max-width: 767px) and (min-width: 360px) {
+.introductionWords {
+    padding: 105px 0;
+    font-size: 21px;
+    }
+}
+
+@media all and (max-width: 1199px) and (min-width: 768px) {
+.introductionWords {
+    padding: 160px 0;
+    font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+.introductionWords {
+    padding: 300px 0;
+    font-size: 40px;
+    }
+}
+     */
