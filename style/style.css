@@ -38,13 +38,20 @@ header {
     padding: 16px;
     font-size: 15px;
     align-items:center;
-    background-color: rgba(233, 230, 230, 0.897);
 }
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(233, 230, 230, 0.897);
+
 }
 
 .space {
@@ -56,7 +63,7 @@ header {
     text-decoration: none;
     padding: 10px;
     font-family: 'Inconsolata', monospace;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .menu li {
@@ -132,13 +139,12 @@ header {
     flex-wrap: wrap;
 }
 
-
 #projects-container h4 {
     font-family: 'Do Hyeon';
     text-align: center;
     font-size: 2em;
     letter-spacing: 3px;
-    padding: 0 0 30px 0;
+    padding: 100px 0 30px 0;
 }
 
 .project {
@@ -148,6 +154,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    width: 100%;
 }
 
 .project img {
@@ -161,17 +168,97 @@ header {
 .description {
     text-align: center;
     font-family: 'Inconsolata', monospace;
-    padding: 40px 100px;
+    padding: 20px 100px;
 }
 
 .description p {
-    padding: 0 0 37px 0;
+    padding: 0 0 30px 0;
+    line-height: 1.7em;
 }
 
 button {
     padding: 10px;
     width: 80px;
 
+}
+
+#skills-container {
+    background-color: black;
+}
+
+#skills-container h4 {
+    font-family: 'Do Hyeon';
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 3px;
+    padding: 100px 0 0 0;
+}
+
+#languages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.languagesTwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.languagesTwo li{
+    font-family: 'Do Hyeon';
+    padding: 50px 10px 100px 30px;
+    color: white;
+}
+
+#languages li {
+    font-family: 'Do Hyeon';
+    padding: 50px 10px 5px 30px;
+    color: white;
+}
+
+#contact-container p {
+    line-height: 1.5em;
+    font-size: 0.5em;
+    text-align: center;
+    padding: 0 200px;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+#contact-container {
+    background-color:black;
+    font-size: 2em;
+    line-height: 3em;
+    letter-spacing: 2px;
+    padding: 50px 0 50px 0;
+    font-family: 'Do Hyeon';
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.contactButtons a {
+    text-decoration: none;
+    padding: 100px 15px;
+    color: white;
+}
+
+.contactButtons img {
+    height: 30px;
+    width: 30px;
 }
 /* @media all and (max-width: 767px) and (min-width: 360px) {
 .introductionWords {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Slabo+27px|Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Do+Hyeon|Inconsolata|Tajawal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -22,9 +21,9 @@
             <div class="top_left_menu">
                 <ul class="menu_bar">
                     <li><a href="index.html#about">ABOUT ME</a></li>
+                    <li><a href="index.html#skills-container">SKILLS</a></li>
                     <li><a href="index.html#projects-container">PROJECTS</a></li>
-                    <li><a href="index.html#skills">SKILLS</a></li>
-                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="index.html#contact-container">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,15 +43,38 @@
         <p>I am a Full Stack Web Developer who love to organize and solve problems. I have Bachelor’s Degree in Nursing from Sothern Illinois University Edawrdsville. I recently discovered my passion towards programming and am currently enrolled in full time immersive coding bootcamp at DigitalCrafts to accelerate my development skills to become a full stack developer. I am seeking job opportunities in the Greater Atlanta area.</p> 
     </div>
 
+    <div id="skills-container">
+            <h4>Skills</h4>
+        <div id="languages">
+               <li><p>HTML</p></li>
+               <li><p>CSS</p></li>
+               <li><p>Node.js</p></li>
+               <li><p>JavaScript</p></li>
+               <li><p>React.js</p></li>
+               <li><p>PostgreSQL</p></li>
+        </div>
+        <div class="languagesTwo">
+               <li><p>Socket.io</p></li>
+               <li><p>Ajax</p></li>
+               <li><p>npm</p></li>
+               <li><p>AWS</p></li>
+               <li><p>GitHub</p></li>
+               <li><p>jQeury</p></li>
+        </div>
+        </div>
+        </div>
+
     <div id="projects-container">
         <h4>Projects</h4>
         <div id="projects">
         <div class="project">
             <img src="image/brainstorm.png">
             <div class="description">
-                <p>BrainstormMe</p>
-                <p>A website for volunteers looking to donate time or money in Metro area by searching local charities and view their ratings.</p>
-                <button type="button">Github</button>
+                <p>
+                HTML5, CSS, Node.js, WebSockets, JavaScript, jQuery</p>
+                <a href="https://github.com/TeamBrainstormMe/BrainstormMe" target="_blank">
+                    <button type="button" id="github">Github</button>
+                </a>
             </div>
         </div>
         <div class="project">
@@ -60,18 +82,31 @@
             <div class="description">
                 <p>Impactful</p>
                 <p>A website for volunteers looking to donate time or money in Metro area by searching local charities and view their ratings.</p>
-                <button type="button">Github</button>
+                <a href="https://github.com/pmattam/Impactful" target="_blank">
+                    <button type="button" id="github">Github</button>
+                </a>
             </div>
         </div>
     </div>
     </div>
 
-    <div id="skills">
-        <h4>skills</h4>
+    <div id="contact-container">
+        <h4>Contact</h4>
+        <p>If you have any questions, feel free to contact via email or any social media. </p>
+        <p>Also, you can check my GitHub account to see more of my work.</p>
+        <div class="contactButtons">
+            <a href="mailto:jaeheekim051510@gmail.com">
+                <img src="image/email.png">
+            </a>
+            <a href="https://www.linkedin.com/in/jaehee-kim-482629133/">
+                    <img src="image/linkedin.png">    
+            </a>
+            <a href="https://github.com/jaeheekim051510">
+                <img src="image/github.png">    
+        </a>
+        </div>
     </div>
-    <div id="contact">
-        <h4>contact</h4>
-    </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
