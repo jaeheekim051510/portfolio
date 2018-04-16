@@ -39,6 +39,63 @@ header {
     font-size: 15px;
     align-items:center;
 }
+.menu-icon {
+    height: 25px;
+    z-index: 1;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 30px 8px 30px;
+    background-color: rgba(233, 230, 230, 0.897);
+}
+
+.top-left-menu li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+
+.dropdown-content li {
+    list-style-type: none; 
+    font-family: 'Inconsolata', monospace;
+    padding: 15px;
+
+}
+
+.dropdown-content a {
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    font-family: inherit;
+    padding: 10px;
+}
+
+.dropdown-content {
+    right: 50px;
+    position: fixed;
+    top: 45px;
+    right: 0px;
+    display: none;
+    background-color: rgba(233, 230, 230, 0.897);
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.dropdown-content.active{
+    display: block;
+}
 
 .menu {
     display: flex;
@@ -63,7 +120,7 @@ header {
     text-decoration: none;
     padding: 10px;
     font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .menu li {
@@ -196,6 +253,11 @@ header {
 button {
     padding: 10px;
     width: 80px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+    font-size: .8em;
 }
 
 #skills-container {
@@ -277,7 +339,17 @@ button {
     width: 30px;
 }
 
-@media all and (max-width: 767px) and (min-width: 300px) {
+@media all and (max-width: 767px) and (min-width: 200px) {
+
+.menu {
+    display: none;
+}
+
+#about {
+    padding: 50px 0;
+}
+
+
 #about p {
     padding: 30px;
     font-size: 15px;
@@ -332,10 +404,10 @@ button {
 }
 
 @media all and (max-width: 1199px) and (min-width: 768px) {
-.introductionWords {
-    padding: 160px 0;
-    font-size: 30px;
+    #about {
+        padding: 50px 0;
     }
+
     #contact-container p {
         padding: 0px 180px 45px 180px;
     }
@@ -359,9 +431,9 @@ button {
     .menu a {
         color: Black;
         text-decoration: none;
-        padding: 5px;
+        padding: 10px;
         font-family: 'Inconsolata', monospace;
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
     #about img {
@@ -370,11 +442,14 @@ button {
         margin: 0 auto;
     
     }
+
+    .mobile-menu {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
-/* .introductionWords {
-    padding: 300px 0;
-    font-size: 40px;
-    } */
+    .mobile-menu {
+        display: none;
+    }
 }
